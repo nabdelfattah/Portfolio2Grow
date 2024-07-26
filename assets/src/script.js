@@ -74,7 +74,7 @@ const heroServices = document.querySelector('.hero-services');
 initObserver(heroServices, 'up', 0.3);
 
 const heroPic = document.querySelector('.hero-pic');
-initObserver(heroPic, 'up', 0.3);
+initObserver(heroPic, 'up', 0.1);
 
 const heroAbout = document.querySelector('.hero-about');
 initObserver(heroAbout, 'up', 0.3);
