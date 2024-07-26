@@ -1,0 +1,167 @@
+.header {
+  background-color: var(--background);
+  position: fixed;
+  padding: 4.8rem 4rem;
+  margin-bottom: 11rem;
+  width: 100%;
+  box-shadow: 0px 0rem 2rem 0rem rgb(144, 144, 144, 0.4);
+  z-index: 2;
+}
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navLinks {
+  display: flex;
+  gap: 5.6rem;
+}
+.navLink {
+  font-size: 1.8rem;
+  line-height: 1.994rem;
+  color: var(--color-black);
+  transition: all var(--timing-animation);
+}
+.navLink:hover {
+  text-shadow: -0.5px 0 currentColor, -0.5px 0 currentColor;
+}
+.socialLinks {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.soicalLink {
+  transition: all var(--timing-animation);
+}
+.soicalLink:hover {
+  transform: scale(1.16);
+}
+.socialIcon {
+  height: 2.4rem;
+  width: 2.4rem;
+  display: block;
+}
+.logo {
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  /* on large screens */
+  position: absolute; /* remove it from the layout */
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.menu:hover label {
+  background-color: var(--color-gray);
+}
+.menu label {
+  background-color: var(--color-black);
+  width: 4.3rem;
+  height: 0.6rem;
+  border-radius: 100rem;
+  transition: all var(--timing-animation);
+}
+.menu input {
+  display: none;
+}
+/*************************************/
+.section-hero {
+  padding: 22.1rem 4rem 0;
+}
+.hero-services {
+  max-width: 25rem;
+}
+.service {
+  transition: all var(--timing-animation);
+}
+.service:hover .service-icon {
+  transform: rotate(10deg);
+}
+.service:hover .heading-tertiary {
+  transform: scale(1.1);
+}
+.hero-services .heading-secondary {
+  margin-bottom: 3.2rem;
+}
+.service-icon {
+  width: 6rem;
+  height: 6rem;
+  background-color: var(--color-white);
+  padding: 1.162rem 1.236rem;
+  transition: all var(--timing-animation);
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3.3rem;
+}
+.service {
+  width: 29.4rem;
+}
+.service-header {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+.statistics {
+  display: flex;
+  gap: 3.2rem;
+}
+/* *************** */
+
+.hero-pic {
+  border: 1px solid var(--color-border);
+  border-bottom: none;
+  padding: 1.7rem 1.4rem 0 1.6rem;
+  border-radius: 2.4rem 2.4rem 0 0;
+  margin-top: 4.7rem;
+}
+.picture {
+  display: block;
+  background-color: var(--color-border);
+  border-radius: 2.4rem 2.4rem 0 0;
+  overflow: hidden;
+  box-shadow: 0 4rem 6.6rem -1.5rem rgba(0, 0, 0, 0.13);
+}
+.hero-img {
+  display: block;
+  transition: all 0.4s;
+  position: relative;
+  z-index: 1;
+}
+.hero-img:hover {
+  transform: rotate(5deg);
+}
+/* *************** */
+.hero-about {
+  display: flex;
+  justify-content: flex-end;
+}
+.about {
+  max-width: 40.8rem;
+  overflow: visible;
+}
+.about > .heading-secondary {
+  margin-bottom: 2.5rem;
+  width: 42rem;
+}
+.hero-about .description {
+  max-width: 40.8rem;
+}
+.hero-about .description:first-of-type {
+  margin-bottom: 3.5rem;
+}
+.statistics p {
+  display: flex;
+  flex-direction: column;
+}

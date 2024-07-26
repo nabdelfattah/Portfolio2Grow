@@ -1,0 +1,143 @@
+@media (max-width: 95em) {
+  .container {
+    max-width: 120rem;
+  }
+  .navLinks,
+  .socialLinks {
+    gap: 2.6rem;
+  }
+  .grid {
+    grid-template-columns: 1fr auto;
+    column-gap: 4rem;
+    row-gap: 12.7rem;
+  }
+  .hero-services {
+    order: 3;
+    grid-column: 1/-1;
+    max-width: initial;
+  }
+  .services-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .hero-pic {
+    order: 2;
+  }
+  .hero-img {
+    width: 100%;
+  }
+  .hero-about {
+    display: block;
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    row-gap: 7rem;
+  }
+  .hero-services {
+    margin-top: 5rem;
+  }
+  .services-list {
+    flex-direction: column;
+    gap: 4.3rem;
+  }
+  .service {
+    width: initial;
+  }
+  .hero-pic {
+    order: 1;
+    margin-top: 0;
+  }
+  .hero-about {
+    order: 2;
+  }
+  .about {
+    max-width: initial;
+    overflow: initial;
+  }
+  .hero-about .description {
+    max-width: initial;
+  }
+  .about > .heading-secondary {
+    width: initial;
+  }
+  /* MOBILE NAVIGATION */
+  .menu {
+    top: 43%;
+    right: 8%;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: initial;
+    align-items: flex-end;
+    z-index: 999;
+  }
+  .header-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(225, 225, 225, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 5;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 9rem;
+    transform: translateX(100%);
+    transition: all var(--timing-animation);
+  }
+  .navLinks {
+    flex-direction: column;
+    gap: 6rem;
+    text-align: center;
+  }
+  .navLink {
+    font-size: 3.4rem;
+  }
+  .header.has-checked .header-wrapper {
+    transform: translateX(0);
+  }
+  .header.has-checked .menu label {
+    transition: all var(--timing-animation);
+  }
+  .header.has-checked .menu label:first-of-type {
+    transform: rotate(40deg) translateY(5px);
+  }
+  .header.has-checked .menu label:nth-of-type(2) {
+    visibility: hidden;
+    display: none;
+  }
+  .header.has-checked .menu label:last-of-type {
+    transform: rotate(-40deg) translateY(-5px);
+  }
+}
+
+/* observer */
+.hero-services,
+.hero-pic,
+.hero-about {
+  opacity: 0;
+  transform: translateY(10rem);
+  transition: all 0.4s;
+}
+.up {
+  transform: translateY(0);
+  opacity: 1;
+}
+.heading-primary,
+.statistics,
+button {
+  opacity: 0;
+  transition: all 1s;
+}
+.reveal {
+  opacity: 1;
+}

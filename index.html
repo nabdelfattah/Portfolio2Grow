@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quattrocento:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./assets/styles/general.css" rel="stylesheet" />
+    <link href="./assets/styles/styles.css" rel="stylesheet" />
+    <link href="./assets/styles/responsive.css" rel="stylesheet" />
+    <script defer src="./assets/src/script.js"></script>
+    <title>Portfolio2Grow</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="heading-secondary logo" href="#" aria-label="Go back home"
+        >Portfolio<span class="gray">2</span>Grow</a
+      >
+      <div class="header-wrapper container">
+        <nav class="nav">
+          <ul class="navLinks">
+            <li><a href="#" class="navLink bold">Home</a></li>
+            <li><a href="#" class="navLink">Portfolio</a></li>
+            <li><a href="#" class="navLink">Blog</a></li>
+            <li><a href="#" class="navLink">About</a></li>
+            <li><a href="#" class="navLink">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="socialLinks">
+          <a href="#" class="soicalLink" aria-label="open instagram page"
+            ><img
+              src="./assets/images/instagram.svg"
+              alt="instagram icon"
+              class="socialIcon"
+          /></a>
+          <a href="#" class="soicalLink" aria-label="open facebook page"
+            ><img
+              src="./assets/images/facebook.svg"
+              alt="facebook icon"
+              class="socialIcon"
+          /></a>
+          <a href="#" class="soicalLink" aria-label="open twitter page"
+            ><img
+              src="./assets/images/twitter.svg"
+              alt="twitter icon"
+              class="socialIcon"
+          /></a>
+          <a href="#" class="soicalLink" aria-label="open linkedin page"
+            ><img
+              src="./assets/images/linkedin.svg"
+              alt="linkedin icon"
+              class="socialIcon"
+          /></a>
+        </div>
+      </div>
+      <div class="menu">
+        <label for="menuToggle"></label>
+        <label for="menuToggle"></label>
+        <label for="menuToggle"></label>
+        <input type="checkbox" name="menu" id="menuToggle" />
+      </div>
+    </header>
+
+    <section class="section-hero">
+      <header class="hero-header">
+        <h1 class="heading-primary">Ahmed Saber</h1>
+      </header>
+      <div class="grid container">
+        <div class="hero-services">
+          <h2 class="heading-secondary">Services</h2>
+          <ul class="services-list">
+            <li>
+              <article class="service">
+                <header class="service-header">
+                  <img
+                    class="service-icon"
+                    src="./assets/images/service1.svg"
+                    alt="icon of angle brackets"
+                  />
+                  <h3 class="heading-tertiary">Web Development</h3>
+                </header>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </article>
+            </li>
+            <li>
+              <article class="service">
+                <header class="service-header">
+                  <img
+                    class="service-icon"
+                    src="./assets/images/service2.svg"
+                    alt="icon of a web page"
+                  />
+                  <h3 class="heading-tertiary">UI/UX Design</h3>
+                </header>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </article>
+            </li>
+            <li>
+              <article class="service">
+                <header class="service-header">
+                  <img
+                    class="service-icon"
+                    src="./assets/images/service3.svg"
+                    alt="icon of a person"
+                  />
+                  <h3 class="heading-tertiary">Web Consulting</h3>
+                </header>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <div class="hero-pic">
+          <picture class="picture">
+            <source
+              srcset="./assets/images/ahmed0saber.webp"
+              type="image/webp"
+            />
+            <img
+              class="hero-img"
+              src="./assets/images/ahmed0saber.png"
+              alt="Ahmed Saber's photo"
+            />
+          </picture>
+        </div>
+
+        <div class="hero-about">
+          <div class="about">
+            <h3 class="heading-secondary">
+              Software Developer Specialized In Frontend Web Development
+            </h3>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button>Hire me</button>
+            <div class="statistics">
+              <p>
+                <span class="heading-secondary black"
+                  ><span class="num">9</span>+ Years</span
+                ><span class="description">Experience</span>
+              </p>
+              <p>
+                <span class="heading-secondary black"
+                  ><span class="num">99</span>+</span
+                ><span class="description">Clients</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
